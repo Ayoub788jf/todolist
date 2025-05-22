@@ -1,0 +1,120 @@
+body{
+    
+    background: linear-gradient(190deg, rgb(16, 16, 92), rgb(129, 10, 176));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+.todolist{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px black;
+    overflow-y: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.todolist .add{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.todolist .add #addtext{
+    background-color: #e9e4e4;
+    width: 100%;
+    padding: 10px;
+    padding-inline: 30px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-inline: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+.todolist .add #addbtn{
+    border: none;
+    background-color: orangered;
+    padding-block: 5px;
+    width: 100px;
+    border-radius: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+.todolist .add #addbtn:hover{
+    background-color: rgb(255, 85, 24);
+}
+#listacontain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+#listacontain li{
+    width: 100px;
+    background-color: white;
+    box-shadow: 1px 1px 4px 1px black;
+    padding-block: 15px;
+    padding-right: 220px;
+    padding-left: 10px;
+    /* border: 1px solid black; */
+    margin-right: 31px; 
+    margin-block: 10px;
+    border-radius: 10px;
+    /* color: red; */
+    font-size: 17px;
+    position: relative;
+    user-select: none;
+
+}
+#listacontain li:hover{
+    scale: 99%;
+    background-color: rgb(255, 215, 201);
+}
+#listacontain li::before{
+    background-image: url(checkbox_empty.svg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    content: '';
+    left: 12px;
+    top: 10px;
+    scale: 90%;
+}
+ul li.checked{
+    color: rgb(33, 75, 245);
+    text-decoration: line-through;
+}
+#listacontain li.checked::before{
+    background-image: url(checkbox_checked.svg);
+}
+.todolist ul li span{
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    scale: 150%;
+    cursor: pointer;
+    
+}
+.todolist ul li span:hover{
+    scale: 130%;
+    opacity: 90%;
+    color: red;
+}
