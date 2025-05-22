@@ -16,7 +16,7 @@ A minimalist, lightweight todo list built with HTML, CSS, and JavaScript. Tasks 
 
 ## 📷 Preview
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.jpg)
 
 > You can take a screenshot of your app and name it `screenshot.png`, then upload it to the repo.
 
