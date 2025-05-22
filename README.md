@@ -22,5 +22,3 @@ A minimalist, lightweight todo list built with HTML, CSS, and JavaScript. Tasks 
 
 ---
 
-## 📁 File Structure
-
